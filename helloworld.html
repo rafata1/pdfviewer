@@ -10,7 +10,7 @@
 
 <canvas id="the-canvas" style="border: 1px solid black; direction: ltr;"></canvas>
 
-<script src="pdfjs/build/pdf.mjs" type="module"></script>
+<script src="./pdfjs/build/pdf.mjs" type="module"></script>
 
 <script id="script" type="module">
   //
@@ -23,7 +23,7 @@
   // The workerSrc property shall be specified.
   //
   pdfjsLib.GlobalWorkerOptions.workerSrc =
-    'pdfjs/pdf.worker.mjs';
+    './pdfjs/build/pdf.worker.mjs';
 
   //
   // Asynchronous download PDF
